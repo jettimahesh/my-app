@@ -1,0 +1,10 @@
+<br>
+<label for="">Name</label>
+<input type="text" [(ngModel)]="name">
+<br>
+<button (click)="regi()">Add</button>
+
+
+<ol>
+    <li *ngFor = "let name of names">{{name}}</li>
+</ol>

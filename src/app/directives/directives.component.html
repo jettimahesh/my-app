@@ -1,0 +1,41 @@
+<p>directives works!</p>
+
+<!-- <h6 *ngFor="let age of ages">{{age}}</h6> -->
+
+<!-- <ul>
+    <li *ngFor = "let state of states">{{state}}</li>
+</ul> -->
+
+<!-- <select name="" id="">
+    <option *ngFor = "let state of states">{{state}}</option>
+</select> -->
+
+<h3 *ngFor = "let product of products">{{product.name}} price is {{product.price}}</h3>
+
+<!-- <table border="1" class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let product of products; let i=index"> -->
+            <!-- <td>{{i+1}}</td> -->
+            <!-- <td>{{product.name}}</td> -->
+            <!-- pipes -->
+            <!-- <td>{{product.name || uppercase}}</td>  -->
+            <!-- <td [ngStyle]="{'color':product.price < 1000 ? 'green' :'red'}">{{product.price}}</td> -->
+            <!-- <td [ngClass]="{'green':product.price < 100 , 'red':product.price > 100}">{{product.price}}</td> -->
+        <!-- </tr> -->
+    <!-- </tbody> -->
+<!-- </table> -->
+
+<h2 *ngIf="true">Hello</h2>
+<h2 *ngIf="false">Bye</h2>
+
+<h3>{{today}}</h3>
+<h3>{{today | date}}</h3>
+<h3>{{today | date: "dd/MM/yyyy"}}</h3>
+<h3>{{today | date:"yy-MM-dd"}}</h3>

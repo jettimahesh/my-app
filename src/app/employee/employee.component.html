@@ -1,0 +1,57 @@
+<h1>Employees</h1>
+<label for="">Name:</label>
+<input type="text" [(ngModel)]="name">
+<br>
+<label for="">Experience:</label>
+<input type="number" [(ngModel)]="experience">
+<br>
+<label for="">Package:</label>
+<input type="number" [(ngModel)]="package">
+<br>
+<label for="">Role:</label>
+<input type="text" [(ngModel)]="emprole">
+<br>
+<button class="btn btn-primary" (click)="add()">Add</button>
+<input type="text" [(ngModel)]="term" (keyup)="search()" class="form-control w-25">
+<select [(ngModel)]="role" (change)="rolefilter()" class="form-control w-50">
+    <option>UIDeveloper</option>
+    <option>Software Developer</option>
+    <option>Data engineer</option>
+    <option>Data engineer</option>
+</select>
+<button (click)="bonus()" class="btn btn-info">50K Bonus</button>
+<button (click)="hike()" class="btn btn-primary">30% Hike</button>
+<button (click)="total()" class="btn btn-info">Total</button>
+
+<!-- <select (change)="sortdr()">
+    <option value="lowToHigh">low to high</option>
+    <option value="highToLow">high to low</option>
+
+</select> -->
+
+<button (click)="packagehl()" class="btn btn-warning">package high to low</button>
+<button (click)="packagelh()" class="btn btn-warning">package low to high</button>
+<table class="table table-striped table-bordered">
+<thead>
+    <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Experience</th>
+        <th>Package</th>
+        <th>Role</th>
+        <th>Action</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor = "let employee of employees; let i = index">
+        <td>{{i+1}}</td>
+        <td [ngClass]="{'bg-danger':employee.package<1000000, 'bg-success':employee.package>1000000}" >{{employee.name | uppercase}}</td>
+        <td>{{employee.experience}}</td>
+        <td>{{employee.package}}</td>
+        <td>{{employee.role}}</td>
+        <td>
+            <button *ngIf="employee.package>500000" (click)="delete(i)" class="btn btn-danger">Delete</button>
+        </td>
+    </tr>
+</tbody>
+</table>

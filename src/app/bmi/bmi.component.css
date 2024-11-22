@@ -1,0 +1,75 @@
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: aquamarine;
+}
+.act{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+}
+.left{
+    height: 60%;
+    width: 45%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}
+.right{
+    height: 60%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 7%;
+}
+.top{
+    height: 23%;
+    width: 100%;
+    box-shadow: 0 0 5px black;
+    background-color: gray;
+    border-radius: 5px;
+}
+.top h2{
+    text-align: center;
+    color: white;
+}
+.bottom{
+    height: 70%;
+    width: 100%;
+    background-color: chartreuse;
+    background-image: url('./../../assets/images/bmi.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px black;
+}
+.btns{
+    display: flex;
+    gap: 8px;
+}
+.btns button{
+    width: 80px;
+    font-size: 14px;
+    color: white;
+    padding: 5px;
+    background-color: cadetblue;
+    border-radius: 2px;
+    border: none;
+}
+.btns button:hover{
+    background-color: red;
+}
+h3{
+    color: red;
+}

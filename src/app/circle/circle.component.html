@@ -1,0 +1,14 @@
+<div class="main">
+    <div class="main1">
+        <h3>Circle</h3>
+        <div>
+            <label for="num1">Radius:</label>
+            <input type="number" id="num1" autofocus [(ngModel)]="num1">
+        </div>
+        <div class="btns">
+            <button [disabled]="!num1" (click)="area()">Area</button>
+            <button (click)="peri()">Perimeter</button>
+        </div>
+        <h3>Results is: <span>{{result}}</span></h3>
+    </div>
+</div>
