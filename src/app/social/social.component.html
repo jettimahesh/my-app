@@ -1,0 +1,22 @@
+<div class="main">
+    <h3>socialprofiles</h3>
+</div>
+<div class="mains">
+    <div class="middle" *ngFor="let profiles of socialdata">
+        <img src="{{profiles.profilePic}}" alt="" id="img">
+         <h5>{{profiles.fullName}}</h5>        
+            <p>@{{profiles.username}}</p>
+            <p>{{profiles.bio}}</p>
+            <p *ngIf="profiles.privacySettings.showEmail===true">{{profiles.email}}</p>
+            <p><b>Location:</b>{{profiles.location}}</p>
+            <p><b>work:</b>{{profiles.work}}</p>
+            <p><b>Hobbies:</b>{{profiles.hobbies}}</p>
+            <p><b>Intrests:</b>{{profiles.interests}}</p>
+            <p id="follow">Followers:{{profiles.followersCount}}</p>
+
+            <p id="follow1">Following:{{profiles.followingCount}}</p>
+            <span class="post">Posts:{{profiles.postsCount}}</span>
+
+
+    </div>
+</div>

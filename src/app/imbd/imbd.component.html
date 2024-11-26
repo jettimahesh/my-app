@@ -1,0 +1,10 @@
+<div class="main">
+    <div class="class" *ngFor="let imb of imbdr">
+        <h3 id="movie">{{imb.movie}}</h3>
+
+        <p style="color:white" >Rating: <b>{{imb.rating}}</b>
+        <span *ngFor="let item of[].constructor(getImbd(imb.rating)); let i=index">⭐</span></p>
+        <a href="{{imb.imdb_url}}" class="view" target="_blank">View on IMDb</a>
+
+    </div>
+</div>

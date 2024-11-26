@@ -1,0 +1,42 @@
+<input type="text" placeholder="Search" [(ngModel)]="term" (keyup)="filter()">
+<select [(ngModel)]="column">
+  <option>account_name</option>
+  <option>available_balance</option>
+  <option>account_number</option>
+  <option>city</option>
+  <option>id</option>
+</select>
+
+<select [(ngModel)]="order">
+    <option>asc</option>
+    <option>desc</option>
+</select>
+<button (click)="sort()">sort</button>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>account_name</th>
+      <th>available_balance</th>
+      <th>account_number</th>
+      <th>city</th>
+      <th>profile_picture</th>
+      <th>id</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let account of accounts">
+      <td>{{account.account_name}}</td>
+      <td>{{account.available_balance}}</td>
+      <td>{{account.account_number}}</td>
+      <td>{{account.city}}</td>
+      <td>
+        <img [src]="account.profile_picture" alt="Profile Picture" width="100px">
+      </td>
+      <td>{{account.id}}</td>
+      <td>
+        <button (click)="delete(account.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

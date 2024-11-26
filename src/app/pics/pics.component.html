@@ -1,0 +1,8 @@
+<div class="main">
+  <div class="image-container" *ngFor="let pics of picsdata">
+    <!-- <img src="{{pics.url}}" alt="Sample Image"> -->
+    <img src="{{pics.download_url}}" alt="Sample Image" class="image">
+    <p class="author">{{pics.author}}</p>
+    <a href="{{pics.download_url}}" target="blank" class="hover-link">Download</a>
+  </div>
+</div>

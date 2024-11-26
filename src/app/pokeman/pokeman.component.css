@@ -1,0 +1,40 @@
+
+.carousel-inner{
+    height: 60%;
+    width:30%;
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    background-color: gray;
+
+}
+#carouselExample{
+    height: 100%;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+#prev{
+    color:black;
+    font-size: large;
+    box-shadow: 0 0 10px red;
+
+}
+.active1{
+    background-color: black;
+}
+h3{
+    font-size: x-large;
+    font-weight: 500;
+    position: absolute;
+    top: 60px;
+}
+p{
+    color: white;
+}
+b{
+    color: black;
+}
