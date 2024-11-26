@@ -1,0 +1,13 @@
+<div class="main">
+    <div class="card" style="width: 18rem;" *ngFor="let ecart of ecarts">
+        <img src="{{ecart.image}}" class="card-img-top" alt="..." height="160px" width="auto">
+        <div class="rate">
+            <h6>{{ecart.rating.rate}}</h6>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{ecart.category}}</h5>
+            <p class="card-text" style="font-size: 14px;">{{ecart.title}}</p>
+            <h5 style="color: red;">Rs. {{ecart.price}}</h5>
+        </div>
+    </div>
+</div>

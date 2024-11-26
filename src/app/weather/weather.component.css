@@ -1,0 +1,34 @@
+.parent{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.child{
+    height: 70%;
+    width: 40%;
+    background-color:whitesmoke;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+#sun{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+.orange{
+    background-color: yellow;
+}
+.temp{
+    font-weight: 900;
+    color: rgb(190, 70, 18);
+}
+.day{
+    color: blue;
+}

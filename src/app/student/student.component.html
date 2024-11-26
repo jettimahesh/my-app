@@ -1,0 +1,50 @@
+<div class="main">
+    <div class="w-100" *ngFor="let student of studentsData" style="max-width: 500px; background: white; border-radius: 0.5rem; box-shadow: 0 0 10px rgba(0,0,0,0.1); border: 1px solid #ddd;">
+        <!-- Top Header Section -->
+        <div class="bg-teal text-white px-3 py-2 rounded-top" style="background-color: #20c997;">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-2">
+              <div class="d-flex justify-content-center align-items-center bg-white rounded-circle" class="schoolimg" [style.backgroundImage]="'url(' + student.school_logo + ')'">
+            </div>
+              <h1 class="text-uppercase fw-bold mb-0" style="font-size: 1rem;">{{student.school_name}}</h1>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Student Section -->
+        <div class="d-flex align-items-center px-3 py-2">
+          <div class="rounded-circle border border-teal overflow-hidden" style="width: 70px; height: 70px; border-color: #20c997;">
+            <img src="{{student.profile_picture}}" alt="Student Photo" class="img-fluid">
+          </div>
+          <div class="ms-3">
+            <h2 class="text-teal fw-bold mb-0" style="color: #20c997; font-size: 1rem;">Student ID Card</h2>
+          </div>
+        </div>
+    
+        <!-- Details Section -->
+        <div class="px-3 text-secondary">
+          <div class="row g-1">
+            <div class="col-5 fw-bold">Name:</div>
+            <div class="col-5">{{student.name}}</div>
+            <div class="col-5 fw-bold">Date of Birth:</div>
+            <div class="col-5">{{student.dob}}</div>
+            <div class="col-5 fw-bold">Phone.no:</div>
+            <div class="col-5">{{student.phone}}</div>
+            <div class="col-5 fw-bold">Email:</div>
+            <div class="col-5">{{student.email}}</div>
+            <div class="col-5 fw-bold">Date of Birth:</div>
+            <div class="col-5">{{student.dob}}</div>
+            <div class="col-5 fw-bold">Place:</div>
+            <div class="col-5">{{student.school_city}}</div>
+          </div>
+        </div>
+    
+        <!-- Divider -->
+        <div class="border-top border-teal mx-3 my-2" style="border-width: 2px; border-color: #20c997;"></div>
+    
+        <!-- Footer Section -->
+        <div class="bg-light text-center py-1">
+          <span class="text-teal fw-bold" style="color: #20c997;">ID NO 00012345AA</span>
+        </div>
+      </div>
+</div>

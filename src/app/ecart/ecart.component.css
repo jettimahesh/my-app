@@ -1,0 +1,11 @@
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.rate{
+    background-color: red;
+    width: 30px;
+    border-radius: 2px;
+    text-align: center;
+}

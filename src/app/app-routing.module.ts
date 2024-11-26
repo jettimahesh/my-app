@@ -16,6 +16,20 @@ import { EmployeeRegistrationComponent } from './employee-registration/employee-
 import { EmployeeComponent } from './employee/employee.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
+import { AccountsComponent } from './accounts/accounts.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { EcartComponent } from './ecart/ecart.component';
+import { EmailComponent } from './email/email.component';
+import { PicsComponent } from './pics/pics.component';
+import { WeatherComponent } from './weather/weather.component';
+import { BlogComponent } from './blog/blog.component';
+import { ImbdComponent } from './imbd/imbd.component';
+import { PokemanComponent } from './pokeman/pokeman.component';
+import { SocialComponent } from './social/social.component';
+import { StudentComponent } from './student/student.component';
+import { StudentIdComponent } from './student-id/student-id.component';
+import { UserRegisComponent } from './user-regis/user-regis.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -33,6 +47,20 @@ const routes: Routes = [
     {path:'employee',component:EmployeeComponent},
     {path:'flipkart',component:FlipkartComponent},
     {path:'vehicle', component:VehicleComponent},
+    {path:'account', component:AccountsComponent},
+    {path:'createaccount', component:CreateAccountComponent},
+    {path:'createvehilcle', component:CreateVehicleComponent},
+    {path:'ecart', component:EcartComponent},
+    {path:'emaile', component:EmailComponent},
+    {path:'pics', component:PicsComponent},
+    {path:'weather', component:WeatherComponent},
+    {path:'blog', component:BlogComponent},
+    {path:'IMDb', component:ImbdComponent},
+    {path:'pokeman', component:PokemanComponent},
+    {path:'social', component:SocialComponent},
+    {path:'student', component:StudentComponent},
+    {path:'studentid', component:StudentIdComponent},
+    {path:'createUser',component:UserRegisComponent},
     {path:'',component:HomeComponent}
   ]},
   {path:'',component:LoginComponent},

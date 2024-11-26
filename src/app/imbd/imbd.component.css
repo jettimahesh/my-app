@@ -1,0 +1,31 @@
+.main{
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    align-items: cenetr;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.class{
+    width:80%;
+    height: 20%;
+    margin-top: 15px;
+    margin-left: 50px;
+    align-items: center;
+    background-color: rgb(27, 26, 26);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+#movie{
+    color:yellow;
+}
+.view{
+    width: fit-content;
+    text-decoration: none;
+    color: yellow;
+    border:2px solid yellow;
+    border-radius: 5px;
+}
