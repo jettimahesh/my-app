@@ -34,7 +34,8 @@ import { PokemanComponent } from './pokeman/pokeman.component';
 import { SocialComponent } from './social/social.component';
 import { StudentComponent } from './student/student.component';
 import { StudentIdComponent } from './student-id/student-id.component';
-import { UserRegisComponent } from './user-regis/user-regis.component'
+import { UserRegisComponent } from './user-regis/user-regis.component';
+import { StudentRegiComponent } from './student-regi/student-regi.component'
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { UserRegisComponent } from './user-regis/user-regis.component'
     SocialComponent,
     StudentComponent,
     StudentIdComponent,
-    UserRegisComponent
+    UserRegisComponent,
+    StudentRegiComponent
   ],
   imports: [
     BrowserModule,
