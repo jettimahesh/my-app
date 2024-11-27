@@ -1,0 +1,62 @@
+/* Center the parent container */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5; /* Light gray background */
+  }
+  
+  /* Style the form */
+  form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  /* Label styling */
+  label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 8px;
+  }
+  
+  /* Input styling */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Input focus styling */
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 4px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #0056b3;
+  }
+  

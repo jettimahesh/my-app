@@ -1,1 +1,13 @@
-<button routerLink="/dashboard">Login</button>
+<div class="parent">
+    <form [formGroup]="loginFrom">
+        <label for="">Email:</label>
+        <input type="email">
+        <br>
+
+        <label for="">Password:</label>
+        <input type="password">
+        <br>
+
+        <button (click)="login()">Login</button>
+    </form>
+</div>
