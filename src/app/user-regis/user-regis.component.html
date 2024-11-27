@@ -26,12 +26,23 @@
     <div *ngIf="userForm.get('phone')?.touched && userForm.get('phone')?.invalid">
         <p class="error" *ngIf="userForm.get('phone')?.errors?.['required']"> Phone number is Required</p>
         <p class="error" *ngIf="userForm.get('phone')?.errors?.['pattern']">Enter a valid 10-digit phone number</p>
+        <p class="error" *ngIf="userForm.get('phone')?.errors?.['max']">Enter only 10-digit phone number</p>
     </div>
     <div formGroupName="address">
         <label for="">city:</label>
         <input type="text" formControlName="city"> <br>
+        <div *ngIf="userForm.get('address')?.get('city')?.touched && userForm.get('address')?.get('city')?.invalid">
+            <p class="error" *ngIf="userForm.get('address')?.get('city')?.errors?.['required']"> Name is Required</p>
+            <p class="error" *ngIf="userForm.get('address')?.get('city')?.errors?.['minlength']"> min 3 characters Required</p>
+            <p class="error" *ngIf="userForm.get('address')?.get('city')?.errors?.['maxlength']"> max 17 characters Required</p>
+        </div>
         <label for="">pin no:</label>
         <input type="number" formControlName="pin"> <br>
+        <div *ngIf="userForm.get('address')?.get('pin')?.touched && userForm.get('address')?.get('pin')?.invalid">
+            <p class="error" *ngIf="userForm.get('age')?.errors?.['required']"> Name is Required</p>
+            <p class="error" *ngIf="userForm.get('age')?.errors?.['min']"> min 18 characters Required</p>
+            <p class="error" *ngIf="userForm.get('age')?.errors?.['max']"> max 60 characters Required</p>
+        </div>
     </div>
 
     <label for="">Type:</label>
@@ -62,6 +73,9 @@
                 <h3>Card {{i+1}}</h3>
                 <label for="">Number:</label>
                 <input type="number" formControlName="number"> <br>
+                <div *ngIf="cardsArrayForm.controls[i]?.get('number')?.touched && cardsArrayForm.controls[i]?.get('number')?.invalid">
+                    <p class="error" *ngIf="cardsArrayForm.controls[i]?.get('number')?.errors?.['required']">Card number Required</p>
+                </div>
                 <label for="">Expiry:</label>
                 <input type="number" formControlName="expiry"> <br>
                 <label for="">CVV:</label>
