@@ -1,11 +1,11 @@
 <div class="parent">
     <form [formGroup]="loginFrom">
         <label for="">Email:</label>
-        <input type="email">
+        <input type="email" formControlName="email">
         <br>
 
         <label for="">Password:</label>
-        <input type="password">
+        <input type="password" formControlName="password">
         <br>
 
         <button (click)="login()">Login</button>
