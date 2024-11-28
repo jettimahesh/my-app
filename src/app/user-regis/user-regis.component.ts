@@ -60,7 +60,7 @@ constructor(){
 }
 
 submit(){
-  console.log(this.userForm.value);
+  console.log(this.userForm);
 }
 
 }
